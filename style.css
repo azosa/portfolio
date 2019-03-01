@@ -547,3 +547,22 @@ right:110%;
                 font-size: 0.9rem;
             }
           }
+
+          @media screen and (min-width: 1200px) {
+            .btn{
+    
+                font-size: 4rem;
+                
+                
+            }
+            .section-icon{
+               
+                font-size:4rem;
+          
+            }
+            .section-about-icon{
+                
+                top:140%;
+              
+               }
+            }
