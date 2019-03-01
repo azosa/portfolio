@@ -381,7 +381,15 @@ width:100%;
     padding:.7em;
 }
 .section-text>p{
-    padding:.5rem;
+    padding:.3rem;
+ 
+}
+.projects-text{
+    text-align: center;
+}
+.section-text-contact{
+    width: 50%;
+    margin:110px auto;
 }
 .interests{
     margin:2rem;
@@ -394,7 +402,7 @@ width:100%;
 }
 .section-about-icon{
  position: absolute;
- top:110%;
+ top:100%;
  left:48%;
 }
 .banner-text{
@@ -502,6 +510,14 @@ right:110%;
         }
         
         @media only screen and (max-width: 600px) {
+            .section-about-icon{
+            
+                top:112%;
+               }
+            .section-text-contact{
+                width: 100%;
+                margin:80px auto;
+            }
             .section-projects-icon{
                
                 left:49%;
