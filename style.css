@@ -29,14 +29,14 @@ font-family: 'Unica One', cursive;
 font-size: 1.7rem;
 
 }
-.left{ background: rgb(255, 214, 103);
+.left{ background: rgb(255, 218, 117);
     height: 100%;
     width: 50%;
     position: absolute; top: 0; left:0;
     z-index: 2;
 }
 .right{
-    background:  rgb(255, 214, 103);
+    background:  rgb(255, 218, 117);
     height: 100%;
 width: 50%;
 position: absolute; top: 0; left:50%;
@@ -87,7 +87,7 @@ opacity:0;
 .inner>div{
     height: 70px;
     width:70px;
-    background:  rgb(255, 214, 103);
+    background: rgb(255, 218, 117);
     margin: 25% auto;
 
 
@@ -173,7 +173,7 @@ animation: logoMoveOuter 3s infinite ease-in-out;
     align-self: center; position: relative;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;}
+    justify-content: space-evenly;}
 .section-three{
     grid-column-start: 2;
     grid-column-end: 2;
@@ -192,7 +192,7 @@ animation: logoMoveOuter 3s infinite ease-in-out;
     align-self: center; position: relative;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .section-name{
     font-family: 'Unica One', cursive;
@@ -359,21 +359,22 @@ width:100%;
         }
         
         .section-inner{
-            grid-row-start: 1;
-          width:70%;
+           
+          width:75%;
             margin:7% auto 10% auto;
             position: relative;
         }
 
+       
         .section-title{
           font-size:1.7rem;
           text-align: center;
           margin: 2rem;
         }
 
-.banner-text{
-  margin:1rem;
-}
+ 
+
+
 .section-text{
     font-size: 1.1rem;
    
@@ -390,10 +391,12 @@ width:100%;
 }
 .section-about-icon{
  position: absolute;
- top:100%;
- left:50%;
+ top:110%;
+ left:48%;
 }
-
+.banner-text{
+    margin-bottom:3rem;
+}
 .skills-list{
     margin:3em auto;
 }
@@ -438,7 +441,7 @@ margin:.7em;
 
    .section-inner-projects{
     width:90%;
-    margin:3rem;
+    margin:2rem;
     margin-top:5rem;
 }
 
@@ -447,7 +450,7 @@ margin:.7em;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    max-width:100%;
+    max-width:99%;
     height:100%;
  
  
@@ -476,7 +479,7 @@ margin:.7em;
  .section-projects-icon{
      position: absolute;
      top:2%;
-     left:50%;
+     left:46%;
  }
 
 
@@ -491,11 +494,18 @@ margin:.7em;
         }
         .section-contact-icon{
 position: absolute;
-top:75%;
+top:100%;
 right:110%;
         }
         
         @media only screen and (max-width: 600px) {
+            .section-projects-icon{
+               
+                left:49%;
+            }
+            .btn{
+                display: none;
+            }
             .type1{
                
                 font-size: 1.2rem;
