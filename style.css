@@ -380,6 +380,9 @@ width:100%;
    
     padding:.7em;
 }
+.section-text>p{
+    padding:.5rem;
+}
 .interests{
     margin:2rem;
 }
