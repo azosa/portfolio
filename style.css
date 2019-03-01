@@ -29,14 +29,14 @@ font-family: 'Unica One', cursive;
 font-size: 1.7rem;
 
 }
-.left{ background: rgb(255, 218, 117);
+.left{ background:rgb(255, 218, 117);
     height: 100%;
     width: 50%;
     position: absolute; top: 0; left:0;
     z-index: 2;
 }
 .right{
-    background:  rgb(255, 218, 117);
+    background:rgb(255, 218, 117);
     height: 100%;
 width: 50%;
 position: absolute; top: 0; left:50%;
@@ -193,6 +193,7 @@ animation: logoMoveOuter 3s infinite ease-in-out;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
+    
 }
 .section-name{
     font-family: 'Unica One', cursive;
@@ -548,7 +549,7 @@ right:110%;
             }
           }
 
-          @media screen and (min-width: 1000px) {
+          @media screen and (min-width: 1200px) {
             .btn{
     
                 font-size: 4rem;
@@ -565,4 +566,11 @@ right:110%;
                 top:140%;
               
                }
+               .section-inner-projects{
+     
+                margin-top:8rem;
+            }
+            .section-name{
+               margin-top:1rem;
+            }
             }
