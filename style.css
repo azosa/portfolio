@@ -548,7 +548,7 @@ right:110%;
             }
           }
 
-          @media screen and (min-width: 1200px) {
+          @media screen and (min-width: 1000px) {
             .btn{
     
                 font-size: 4rem;
