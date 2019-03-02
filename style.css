@@ -50,6 +50,16 @@ animation: rightOut 2s ease-in-out;
 .left-out{
     animation: leftOut 2s ease-in-out;
 }
+ @-webkit-keyframes rightOut{
+    0%{
+        left:50%;
+        opacity: 1;
+    }
+100%{
+left:100%;
+opacity:0;
+}
+}
 @keyframes rightOut{
     0%{
         left:50%;
@@ -61,6 +71,16 @@ opacity:0;
 }
 }
 @keyframes leftOut{
+    0%{
+        left:0;
+        opacity: 1;
+    }
+100%{
+left:-50%;
+opacity:0;
+}
+}
+@-webkit-keyframes leftOut{
     0%{
         left:0;
         opacity: 1;
@@ -88,7 +108,7 @@ opacity:0;
     height: 70px;
     width:70px;
     background: rgb(255, 218, 117);
-    margin: 25% auto;
+    margin: 27% auto;
 
 
 }
@@ -111,13 +131,25 @@ animation: logoMoveOuter 3s infinite ease-in-out;
     }
 
 }
+
+@-webkit-keyframes logoMoveInner{
+    100%{
+     transform:rotate(390deg);
+     }
+ 
+ }
 @keyframes logoMoveOuter{
     100%{
      transform:rotate(-390deg);
      }
  
  }
-
+ @-webkit-keyframes logoMoveOuter{
+    100%{
+     transform:rotate(-390deg);
+     }
+ 
+ }
 
 .inner-container{ 
      position: absolute;
@@ -233,6 +265,14 @@ animation: logoMoveOuter 3s infinite ease-in-out;
         }
        
     }
+
+    @-webkit-keyframes bounceLeft{
+       
+        50%{
+            transform: translateX(15px);
+        }
+       
+    }
        @keyframes bounceUp{
    
            50%{
@@ -241,7 +281,13 @@ animation: logoMoveOuter 3s infinite ease-in-out;
          
        }
 
-    
+       @-webkit-keyframes bounceUp{
+   
+        50%{
+         transform: translateY(15px);
+        }
+      
+    }
        .type-one,.type-two{
            display:none;
        }
@@ -300,6 +346,9 @@ animation: logoMoveOuter 3s infinite ease-in-out;
         color: rgb(165, 220, 252);
         animation: iconAnimate 2s infinite  ease-in-out;
       }
+
+
+
       @keyframes iconAnimate{
 
 50%{
@@ -310,7 +359,13 @@ animation: logoMoveOuter 3s infinite ease-in-out;
 
 
       }
+      @-webkit-keyframes iconAnimate{
 
+        50%{
+            
+            transform: scale(1.5);
+        }
+    }
      
 
          .scroll-icon {
@@ -349,7 +404,14 @@ animation: logoMoveOuter 3s infinite ease-in-out;
                 opacity:1;
             }
         }
-        
+        @-webkit-keyframes fadeIn{
+            0%{
+                opacity:0;
+            }
+            100%{
+                opacity:1;
+            }
+        }
         section{
 position: absolute;
 height: 100%;
@@ -511,6 +573,46 @@ right:110%;
         }
         
         @media only screen and (max-width: 600px) {
+            .inner{
+
+                height: 140px;
+                width:140px;
+
+             
+                
+            }
+            .inner>div{
+                height: 65px;
+                width:65px;
+           
+            
+            
+            }
+            .outer{
+
+                height: 140px;
+                width:140px;
+
+            
+            }
+            .name{
+
+                letter-spacing: 3px;
+
+                top:5%; 
+
+                }
+                .name>p{
+                 font-size: 2rem;
+
+                }
+                .name>p>span{
+
+                font-size: 1.5rem;
+                
+                }
+
+
             .section-about-icon{
             
                 top:112%;
@@ -563,7 +665,7 @@ right:110%;
             }
             .section-about-icon{
                 
-                top:140%;
+                top:115%;
               
                }
                .section-projects-icon{
