@@ -9,6 +9,7 @@ let innerContainer=window.document.querySelector(".inner-container");
 let btn =document.querySelector(".scroll-icon")
 
 
+
 let btnUp=window.document.querySelector(".btn-up");
 let btnLeft=window.document.querySelector(".btn-left");
 let btnDown=window.document.querySelector(".btn-down");
@@ -32,6 +33,10 @@ about.style.top="-"+wndHeight+"px";
 projects.style.top=wndHeight+"px";
 skills.style.left="-"+wndWidth+"px";
 contact.style.left=wndWidth+"px";
+
+
+
+
 
 let innerContainerTop=30;
 let innerContainerLeft=0;
@@ -71,6 +76,7 @@ function contactBtnAnimation(){
    contact.style.left=wndWidth+"px";
    innerContainer.style.left=innerContainerLeft+"px";
    innerContainer.style.display="grid";
+   innerContainer.style.display="-ms-grid";
  
    if(innerContainerLeft<0){
        requestAnimationFrame(contactBtnAnimation);
@@ -107,6 +113,7 @@ function projectsBtnAnimation(){
     innerContainerTop+=80;
    projects.style.top=wndHeight+"px";
    innerContainer.style.top=innerContainerTop+"px";innerContainer.style.display="grid";
+   innerContainer.style.display="-ms-grid";
    if(innerContainerTop<30){
        requestAnimationFrame(projectsBtnAnimation);
    }
@@ -138,6 +145,7 @@ function aboutBtnAnimation(){
      innerContainerTop-=80;
     about.style.top=wndHeight+"px";
     innerContainer.style.top=innerContainerTop+"px";innerContainer.style.display="grid";
+    innerContainer.style.display="-ms-grid";
     if(innerContainerTop>30){
         requestAnimationFrame(aboutBtnAnimation);
     }
@@ -175,6 +183,7 @@ function aboutAnimation(){
        skills.style.left=wndWidth+"px";
        innerContainer.style.left=innerContainerLeft+"px";
        innerContainer.style.display="grid";
+       innerContainer.style.display="-ms-grid";
        
        if(innerContainerLeft>0){
            requestAnimationFrame(skillsBtnAnimation);
