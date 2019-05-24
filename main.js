@@ -3,7 +3,7 @@ let loaderCenter = window.document.querySelector(".center");
 let right=window.document.querySelector(".right");
 let left=window.document.querySelector(".left");
 let name=window.document.querySelectorAll(".section-name");
-let opacity=110;
+let opacity=75;
 let container=window.document.querySelector(".container");
 let innerContainer=window.document.querySelector(".inner-container");
 let btn =document.querySelector(".scroll-icon")
@@ -48,6 +48,7 @@ skills.style.display="none";
 projects.style.display="none";
 contact.style.display="none";
 
+aboutAnimation();
 loadListeners();
 function loadListeners(){
  name[0].addEventListener("click",aboutAnimation);

@@ -29,14 +29,14 @@ font-family: 'Unica One', cursive;
 font-size: 1.7rem;
 
 }
-.left{ background:rgb(255, 218, 117);
+.left{ background:rgb(62, 110, 138);
     height: 100%;
     width: 50%;
     position: absolute; top: 0; left:0;
     z-index: 2;
 }
 .right{
-    background:rgb(255, 218, 117);
+    background:rgb(62, 110, 138);
     height: 100%;
 width: 50%;
 position: absolute; top: 0; left:50%;
@@ -107,7 +107,7 @@ opacity:0;
 .inner>div{
     height: 70px;
     width:70px;
-    background: rgb(255, 218, 117);
+    background: rgb(62, 110, 138);
     margin: 27% auto;
 
 
@@ -530,7 +530,7 @@ progress[value] {
   }
 
   progress[value]::-webkit-progress-value {
-    background-color:rgb(87, 238, 161);
+    background-color:rgb(62, 110, 138);
       border-radius: 2px; 
       background-size: 35px 20px, 100% 100%, 100% 100%;
   }
