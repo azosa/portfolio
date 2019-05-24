@@ -48,7 +48,7 @@ skills.style.display="none";
 projects.style.display="none";
 contact.style.display="none";
 
-aboutAnimation();
+
 loadListeners();
 function loadListeners(){
  name[0].addEventListener("click",aboutAnimation);
@@ -223,10 +223,12 @@ function fadeOut(){
         requestAnimationFrame(fadeOut);
     }
     else if(opacity==0){
+  
        right.classList.add("right-out");
        left.classList.add("left-out");
      setTimeout(function removeClasses(){ right.classList.remove("right"); left.classList.remove("left");} ,1800)
      loaderCenter.style.display="none";
+      setTimeout(aboutAnimation,700);
        
     }
 } 
